@@ -4,9 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Haiku Creator</title>
 </head>
 <body>
-  <h1>Content</h1>
+
+  <div class="container">
+    <h1>Haiku Creator</h1>
+    <h3>Enter 3 lines and check if it's a haiku:</h3>
+
+      <form id="createHaiku">
+        <div class="form-group">
+      <input type="type" id="line1" required><br><br>
+      <input type="type" id="line2" required><br><br>
+      <input type="type" id="line3" required><br><br>
+
+      <button type="submit" class="btn">Find out!</button>
+      </div>
+      </form>
+    <div class="haikuResult">
+      <h4>Your poem:</h4>
+      <ul>
+        <li><span id="result1"></span></li>
+        <li><span id="result2"></span></li>
+        <li><span id="result3"></span></li>
+      </ul>
+      <h4>...is <span id="result"></span>a haiku!</h4>
+    </div>
 </body>
 </html>
